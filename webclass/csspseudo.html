@@ -11,6 +11,7 @@
             background-color: antiquewhite;
             
         }
+        /* hover整個table會變色變大小 */
         .box:hover{
             width: 500px;
             height: 500px;
@@ -21,6 +22,7 @@
             border-collapse: collapse;
             text-align: center;
         }
+        /* hover整個table會變色變大小 */
         /* table:hover{
             background-color: blue;
         } */
@@ -31,23 +33,25 @@
         .price{
             text-align: left;
         }
-
+        /* ::before在元素前面添加額外元素 */
         .price::before{
             content: '$';
         }
-
+        /* ::after在元素尾部添加額外樣式和內容 */
         .price::after{
             content: '元';
         }
+        /* :nth-child(even)為偶數行設置背景色,:nth-child(odd)為奇數行設置背景顏色 */
         tr:nth-child(even) {
             background-color: #ecd1d1;
 
             
         }
+        /* :hover滑鼠移過去變色放大  */
         td:hover{
             background-color: rgb(243, 221, 195);
             font-size: x-large;
-
+            color: blue;
         }
         </style>
 </head>
