@@ -16,11 +16,67 @@
             height: 500px;
             background-color: blue;
         }
-    </style>
+        table{
+            width: 80%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        /* table:hover{
+            background-color: blue;
+        } */
+        tr , td , th {
+            border: 2px dashed rgb(136, 209, 26);
+            
+        }
+        .price{
+            text-align: left;
+        }
+
+        .price::before{
+            content: '$';
+        }
+
+        .price::after{
+            content: '元';
+        }
+        tr:nth-child(even) {
+            background-color: #ecd1d1;
+
+            
+        }
+        td:hover{
+            background-color: rgb(243, 221, 195);
+            font-size: x-large;
+
+        }
+        </style>
 </head>
 <body>
     <div class="box">
 
     </div>
+    <hr>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>商品名稱</th>
+            <th>價格</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>咖啡</td>
+            <td class="price">150</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>拿鐵</td>
+            <td class="price">200</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>摩卡</td>
+            <td class="price">250</td>
+        </tr>
+    </table>
 </body>
 </html>
